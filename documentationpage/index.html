@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <header>Technical Documentation</header>
+        <a href="#HTML" class="nav-link">HTML</a>
+        <a href="#CSS" class="nav-link">CSS</a>
+        <a href="#JavaScript" class="nav-link">JavaScript</a>
+        <a href="#API" class="nav-link">API</a>
+        <a href="#Tools" class="nav-link">Tools</a>
+    </nav>
+
+    <!-- Main content -->
+    <main id="main-doc">
+
+        <!-- HTML Section -->
+        <section class="main-section" id="HTML">
+            <header>HTML</header>
+            <p>HTML stands for Hypertext Markup Language.</p>
+            <p>It is the standard markup language for creating web pages.</p>
+            <p>HTML elements are the building blocks of HTML.</p>
+            <code>&lt;html&gt;</code>
+            <code>&lt;head&gt;</code>
+            <code>&lt;body&gt;</code>
+            <ul>
+                <li>&lt;html&gt; - defines the document</li>
+                <li>&lt;head&gt; - contains metadata</li>
+                <li>&lt;body&gt; - contains content</li>
+            </ul>
+        </section>
+
+        <!-- CSS Section -->
+        <section class="main-section" id="CSS">
+            <header>CSS</header>
+            <p>CSS stands for Cascading Style Sheets.</p>
+            <p>It is used to style and layout web pages.</p>
+            <p>CSS controls the layout, fonts, colors, and spacing of HTML elements.</p>
+            <code>body {}</code>
+            <code>h1 { color: blue; }</code>
+            <code>p { margin: 20px; }</code>
+            <ul>
+                <li>Selectors</li>
+                <li>Properties</li>
+                <li>Values</li>
+            </ul>
+        </section>
+
+        <!-- JavaScript Section -->
+        <section class="main-section" id="JavaScript">
+            <header>JavaScript</header>
+            <p>JavaScript is a programming language used to create dynamic and interactive web content.</p>
+            <p>It can manipulate HTML and CSS to update the page content without reloading.</p>
+            <p>JavaScript runs in the browser, making websites more interactive.</p>
+            <code>console.log("Hello, World!");</code>
+            <code>let x = 10;</code>
+            <code>document.getElementById("demo").innerHTML = "Hello JavaScript!";</code>
+            <ul>
+                <li>Variables</li>
+                <li>Functions</li>
+                <li>Events</li>
+            </ul>
+        </section>
+
+        <!-- API Section -->
+        <section class="main-section" id="API">
+            <header>API</header>
+            <p>API stands for Application Programming Interface.</p>
+            <p>An API allows one software application to interact with another.</p>
+            <p>APIs are used to connect web services and enable communication between different platforms.</p>
+            <code>fetch('url').then(response => response.json());</code>
+            <code>axios.get('url').then(response => { ... });</code>
+            <code>XMLHttpRequest.open('GET', 'url', true);</code>
+            <ul>
+                <li>HTTP Methods</li>
+                <li>Endpoints</li>
+                <li>Authentication</li>
+            </ul>
+        </section>
+
+        <!-- Tools Section -->
+        <section class="main-section" id="Tools">
+            <header>Tools</header>
+            <p>Tools are essential for web development and testing.</p>
+            <p>Some common tools include code editors, version control, and testing frameworks.</p>
+            <p>They help developers streamline their workflows and improve productivity.</p>
+            <code>VS Code</code>
+            <code>Git</code>
+            <code>Jest</code>
+            <ul>
+                <li>Version Control (Git)</li>
+                <li>Text Editors (VS Code, Sublime Text)</li>
+                <li>Testing Frameworks (Jest, Mocha)</li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+</html>

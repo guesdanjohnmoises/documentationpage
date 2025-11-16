@@ -1,0 +1,163 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background for the page */
+    color: #e0e0e0; /* Light text color for contrast */
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Navbar Styles */
+#navbar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #1e1e1e; /* Dark navbar background */
+    color: #e0e0e0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-right: 2px solid #333; /* Darker border for separation */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navbar header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ecf0f1; /* Light color for navbar header */
+}
+
+.nav-link {
+    display: block;
+    color: #b0b0b0; /* Lighter gray color for links */
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s, padding-left 0.2s;
+    width: 100%;
+    text-align: left;
+}
+
+.nav-link:hover {
+    background-color: #3498db; /* Blue background on hover */
+    padding-left: 30px;
+}
+
+/* Main Content */
+#main-doc {
+    margin-left: 270px;
+    padding: 40px;
+    width: calc(100% - 270px);
+    background-color: #181818; /* Dark background for content */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+}
+
+.main-section {
+    margin-bottom: 60px;
+}
+
+.main-section header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff; /* White header text */
+    text-transform: capitalize;
+}
+
+.main-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #b0b0b0; /* Light gray for paragraphs */
+}
+
+code {
+    display: block;
+    background-color: #333333; /* Dark code background */
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ecf0f1; /* Light text for code */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #7f8c8d; /* Subtle gray color for list items */
+}
+
+/* Hover Effect for Code */
+code:hover {
+    background-color: #3498db; /* Highlight code on hover */
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Stack the navbar and main content on smaller screens */
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    #main-doc {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        padding: 12px;
+        margin: 5px 0;
+        text-align: center;
+    }
+}
+
+/* Animation for smoother transitions */
+.nav-link, .main-section header {
+    transition: all 0.3s ease-in-out;
+}
+
+.main-section header:hover {
+    color: #3498db; /* Color change on hover */
+}
+
+#navbar header {
+    transition: transform 0.3s ease;
+}
+
+#navbar:hover header {
+    transform: scale(1.05);
+}
